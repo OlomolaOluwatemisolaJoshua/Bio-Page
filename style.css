@@ -1,0 +1,150 @@
+@font-face {
+    font-family: font;
+    src: url(fonts/HankenGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: fonts;
+    src: url(fonts/HankenGrotesk-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/_fhdtexture113.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: font;
+}
+
+main{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 40px;
+    margin: 20px auto;
+    margin-top: 50px;
+    border: 2px solid transparent;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+
+main:hover{
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: 4px solid rgb(128, 0, 77);
+    transition: 0.8s;
+    color: deeppink;
+}
+
+@keyframes colorchange{
+    0%{box-shadow: red 15px 15px 7rem solid;}
+    20%{box-shadow: rgb(55, 255, 0) 15px 15px 7rem ;}
+    40%{box-shadow: rgb(0, 60, 255) 15px 15px 7rem ;}
+    60%{box-shadow: rgb(255, 199, 17) 15px 15px 7rem ;}
+    100%{box-shadow: rgb(255, 0, 149) 15px 15px 7rem ;}
+}
+
+.photo{
+    width: 100%;
+}
+
+#photo{
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+#name{
+    font-family: fonts;
+    font-size: 26px;
+}
+
+#name:hover{
+    color: rgb(19, 170, 19);
+    transition: 2s;
+}
+
+#nme:hover{
+    color: rgb(19, 170, 19);
+    transition: 2s;
+}
+    
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer{
+    color: aqua;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+footer a{
+    color: snow;
+}
+footer a:hover{
+    transition: 1s;
+    color: chartreuse;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+ul button{
+    border: 2px solid rgb(42, 40, 40);
+    height: 45px;
+    width: 90%;
+    border-radius: 8px;
+}
+
+ul button:hover{
+    border: 2px solid;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+}
+
+@media screen and (max-width:680px) {
+    body{
+        padding: 20px;
+    }
+    
+    main{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        border-radius: 15px;
+        gap: 40px;
+    }
+
+    ul{
+        gap: 30px;
+    }
+
+    ul button{
+        width: 100%;
+    }
+}
